@@ -21,6 +21,8 @@ lvim.plugins = {
   { "lunarvim/horizon.nvim" },
   { "tomasr/molokai" },
   { "ayu-theme/ayu-vim" },
+  { "sainnhe/everforest" },
+  { "NLKNguyen/papercolor-theme" },
 
   {
     "folke/trouble.nvim",
@@ -48,7 +50,7 @@ lvim.plugins = {
 
   { "christoomey/vim-tmux-navigator" },
   { "tpope/vim-surround" },
-  { "felipec/vim-sanegx", event = "BufRead" },
+  { "felipec/vim-sanegx",            event = "BufRead" },
   {
     "windwp/nvim-ts-autotag",
     config = function()

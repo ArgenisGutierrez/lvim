@@ -15,10 +15,11 @@ local themes = {
   sonokai = "sonokai",
   edge = "edge",
   ayu = "ayu",
+  paper = "papercolor-theme",
 }
 
-lvim.transparent_window = false
-lvim.colorscheme = themes.lunar
+lvim.transparent_window = true
+lvim.colorscheme = themes.gruvbox_material
 
 local extra_opts = {
   sonokai = {
