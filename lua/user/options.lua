@@ -48,7 +48,9 @@ vim.opt.shell = "/bin/zsh"
 lvim.format_on_save = true
 
 vim.o.linebreak = true
-vim.o.wrap = false
+vim.o.wrap = true
+vim.o.relativenumber = true
+vim.o.encoding = utf - 8
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 lvim.builtin.telescope.defaults.path_display = {
