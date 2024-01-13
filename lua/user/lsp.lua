@@ -69,9 +69,3 @@ linters.setup({
     filetypes = { "javascript", "typescript", "typescriptreact", "json" }
   },
 })
-
-lvim.lsp.diagnostics.float.max_width = 120
-lvim.lsp.diagnostics.float.focusable = true
-
-lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
-table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })

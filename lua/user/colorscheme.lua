@@ -3,24 +3,19 @@ local themes = {
   rose_pine = "rose-pine",
   lunar = "lunar",
   gruvbox_material = "gruvbox-material",
-  onedarker = "onedarker",
-  onedark = "onedark",
   horizon = "horizon",
-  tokyonight = "tokyonight",
-  tokyonight_night = "tokyonight-night",
-  tokyonight_day = "tokyonight-day",
-  tokyonight_moon = "tokyonight-moon",
   desert = "desert",
-  morning = "morning",
   sonokai = "sonokai",
   edge = "edge",
   ayu = "ayu",
-  paper = "papercolor-theme",
+  paper = "papercolor",
 }
 
+-- colorscheme config
+lvim.colorscheme = themes.ayu
 lvim.transparent_window = true
-lvim.colorscheme = themes.gruvbox_material
 
+--options of themes
 local extra_opts = {
   sonokai = {
     styles = {
@@ -46,11 +41,7 @@ local extra_opts = {
   },
 }
 
-if vim.g.neovide then
-  lvim.transparent_window = false
-  return
-end
-
+--definition of options of themes
 if lvim.colorscheme == themes.sonokai then
   vim.g.sonokai_style = "espresso"
   vim.g.sonokai_style = "shusia"
@@ -64,5 +55,5 @@ if lvim.colorscheme == themes.edge then
 end
 
 if lvim.colorscheme == themes.ayu then
-  vim.g.ayucolor = extra_opts.ayu.styles.mirage
+  vim.g.ayucolor = extra_opts.ayu.styles.dark
 end
