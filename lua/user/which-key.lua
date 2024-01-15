@@ -24,7 +24,6 @@ wk.mappings["W"] = {
   h = { '<C-w>|', 'Maximize window horizontally (|)' },
   v = { '<C-w>_', 'Maximize window vertically (_)' },
   ['='] = { '<C-w>=', 'Resize windows equally' },
-  s = { ":lua require('telescope-tabs').list_tabs()<cr>", 'Search Tabs' },
 }
 
 wk.mappings["t"] = {

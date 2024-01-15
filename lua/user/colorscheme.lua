@@ -9,6 +9,7 @@ local themes = {
   edge = "edge",
   ayu = "ayu",
   paper = "papercolor",
+  monokai = "vim-monokai-tasty"
 }
 
 -- colorscheme config

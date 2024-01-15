@@ -10,6 +10,7 @@ lvim.plugins = {
   { "ayu-theme/ayu-vim" },
   { "sainnhe/everforest" },
   { "NLKNguyen/papercolor-theme" },
+  { "patstockwell/vim-monokai-tasty" },
 
   --Plugins
   --mejor barra de errores
@@ -28,7 +29,6 @@ lvim.plugins = {
       })
     end
   },
-  { "christoomey/vim-tmux-navigator" },
   -- autorename and close html tags
   {
     "windwp/nvim-ts-autotag",
@@ -40,6 +40,24 @@ lvim.plugins = {
   {
     'nvim-telescope/telescope-frecency.nvim',
     dependencies = { 'nvim-telescope/telescope.nvim', 'kkharji/sqlite.lua' },
+  },
+  --Agrega senales de git
+  {
+    "lewis6991/gitsigns.nvim",
+    config = true,
+    opts = {
+      signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
+      numhl      = true,  -- Toggle with `:Gitsigns toggle_numhl`
+      linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
+      word_diff  = true,  -- Toggle with `:Gitsigns toggle_word_diff`
+      signs      = {
+        add = { text = '▎' },
+        change = { text = '▎' },
+        delete = { text = '➤' },
+        topdelete = { text = '➤' },
+        changedelete = { text = '▎' },
+      },
+    }
   },
 
 }
