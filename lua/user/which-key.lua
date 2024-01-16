@@ -20,7 +20,7 @@ wk.mappings["s"]["w"] = {
 }
 
 wk.mappings["W"] = {
-  name = " Window Ctrl",
+  name = " Window Resize",
   h = { '<C-w>|', 'Maximize window horizontally (|)' },
   v = { '<C-w>_', 'Maximize window vertically (_)' },
   ['='] = { '<C-w>=', 'Resize windows equally' },
