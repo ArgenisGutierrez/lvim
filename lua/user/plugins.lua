@@ -59,7 +59,6 @@ lvim.plugins = {
       },
     }
   },
-
   --Rest Api Client
   {
     "rest-nvim/rest.nvim",
@@ -95,8 +94,8 @@ lvim.plugins = {
         -- executables or functions for formatting response body [optional]
         -- set them to false if you want to disable them
         formatters = {
-          json = "json-lsp",
-          html = "html-lsp"
+          json = "prettier",
+          html = "prettier"
         },
       },
       -- Jump to request line on run
@@ -107,6 +106,7 @@ lvim.plugins = {
       search_back = true,
     },
   }
+
 }
 
 lvim.builtin.telescope.on_config_done = function(telescope)
