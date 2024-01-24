@@ -31,3 +31,10 @@ wk.mappings["t"] = {
   p = { ':Telescope projects<cr>', 'Projects' }, -- requires telescope-project.nvim plugin
   r = { ':Telescope resume<cr>', 'Resume' },
 }
+
+wk.mappings["R"] = {
+  name = 'Rest API',
+  r = { "<cmd>lua require('rest-nvim').run(RestNvim)<cr>", 'Run Request' },
+  p = { "<cmd>lua require('rest-nvim').run(RestNvimPreview)<cr>", 'Run Preview' },
+  l = { "<cmd>lua require('rest-nvim').run(RestNvimLast)<cr>", 'Run Last Req' },
+}

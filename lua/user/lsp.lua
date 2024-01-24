@@ -37,8 +37,7 @@ ts.setup({
 --     "--stdio",
 --   },
 -- })
---
---
+
 -- config de tailwindcss
 require("lvim.lsp.manager").setup("tailwindcss", {
   root_dir = require('lsp.util').root_pattern("tailwind.config.js", ".git")
