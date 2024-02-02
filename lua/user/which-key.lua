@@ -38,3 +38,16 @@ wk.mappings["R"] = {
   p = { "<cmd>lua require('rest-nvim').run(RestNvimPreview)<cr>", 'Run Preview' },
   l = { "<cmd>lua require('rest-nvim').run(RestNvimLast)<cr>", 'Run Last Req' },
 }
+
+wk.mappings["N"] = { ":Neogen<cr>", "Neogen" }
+wk.mappings["T"] = {
+  name = "TODO",
+  t = { "o TODO: ", "TODO" },
+  w = { "o WARN: ", "WARN" },
+  f = { "o FIX: ", "FIX" },
+  p = { "o PERF: ", "PERF" },
+  n = { "o NOTE: ", "NOTE" },
+  T = { "o TEST: ", "TEST" },
+  F = { ":TodoTelescope<cr>", "TodoTelescope" },
+  m = { ":TodoTrouble<cr>", "TodoTrouble" },
+}
